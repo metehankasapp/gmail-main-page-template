@@ -110,6 +110,8 @@ nav {
     font-weight: 500;
 }
 
+
+
 .section-first p {
     color: #5f6368;
     font-family: sans-serif;
@@ -124,6 +126,72 @@ nav {
     margin-right: 1rem;
 }
 
+
+/*SECTION2*/
+
+
+.section-second-hbig {
+    color: #202124;
+    font-size: 40px;
+    width: 400px;
+    margin-bottom: 100px;
+}
+
+
+.progressArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    width: 5px;
+    margin-right: 40px;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+
+
+}
+
+.progresInner {
+    content: '\A';
+    position: absolute;
+    background: var(--gmail-blue);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: 1s all;
+    border-radius: 0;
+
+
+}
+
+
+.liHeader {
+    font-size: 22px;
+    line-height: 28px;
+    font-family: sans-serif;
+    color: #5f6368;
+    transition: .5s all;
+}
+
+.liText {
+    color: #5f6368;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.section-second-li {
+    margin-top: 3rem;
+    cursor: pointer;
+
+}
 
 
 @media (min-width: 576px) {
@@ -157,7 +225,9 @@ nav {
 }
 
 @media (min-width: 1200px) {
-    .section-first .col-xl-5 {
+
+    .section-first .col-xl-5,
+    .pleft {
         padding-left: 13rem;
         padding-right: 3rem;
     }
