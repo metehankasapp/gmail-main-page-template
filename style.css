@@ -133,7 +133,7 @@ nav {
 .section-second-hbig {
     color: #202124;
     font-size: 40px;
-    width: 500px;
+    width: 100%;
     margin-bottom: 100px;
 }
 
@@ -142,6 +142,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#progress1 {
+    background-color: var(--gmail-blue);
 }
 
 .progress {
@@ -211,10 +216,19 @@ nav {
 }
 
 
+.active-li {
+    color: var(--gmail-blue);
+}
+
+
+
+
 @media (min-width: 576px) {
 
     .section-first .col-xl-7 img,
-    .thirded {
+    .thirded,
+    .ss-ctr,
+    .section-second-hbig {
         width: 500px;
     }
 }
@@ -249,7 +263,8 @@ nav {
         padding-right: 3rem;
     }
 
-    .thirded {
+    .thirded,
+    .ss-ctr {
         width: auto;
     }
 
