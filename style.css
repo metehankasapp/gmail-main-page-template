@@ -145,7 +145,8 @@ nav {
 }
 
 
-#progress1 {
+#progress1,
+#progress1-t {
     background-color: var(--gmail-blue);
 }
 
