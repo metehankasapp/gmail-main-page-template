@@ -302,45 +302,47 @@ nav {
 }
 
 @media (min-width: 768px) {
+  .st-ctr {
+    padding: 9rem 1rem;
+  }
 
-    .sf-header {
-        font-size: 38px;
-        line-height: 52px;
-      }
-      
-      .sf-subtitle {
-          width: 630px;
-        margin-top: 16px;
-        font-size:28px;
-      }
-      
-      .sf-text {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 25px;
-        width: 600px;
-        margin-bottom: 30px;
-      }
-      
-      .sf-button {
-        border: 0.5px solid rgba(0, 0, 0, 0.07);
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.1px;
-        line-height: 24px;
-        transition: 0.3s all;
-        background-color: #fff;
-        color: var(--gmail-blue);
-      }
-      
+  .sf-header {
+    font-size: 42px;
+    line-height: 52px;
+  }
 
-    .st-ctr{
-        width: auto;
-    }
+  .sf-subtitle {
+    width: 630px;
+    margin-top: 16px;
+    font-size: 28px;
+  }
 
-    #sf-ctr{
-        width: 700px;
-    }
+  .sf-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+
+  .sf-button {
+    border: 0.5px solid rgba(0, 0, 0, 0.07);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    transition: 0.3s all;
+    background-color: #fff;
+    color: var(--gmail-blue);
+  }
+
+  .st-ctr {
+    width: auto;
+  }
+
+  #sf-ctr {
+    width: 700px;
+  }
   .st-item {
     max-width: 300px;
     display: flex;
@@ -352,11 +354,10 @@ nav {
 }
 
 @media (min-width: 992px) {
-    #sf-ctr{
-        width: 900px;
-    }
+  #sf-ctr {
+    width: 900px;
+  }
 
-    
   .section-first p {
     font-size: 18px;
   }
