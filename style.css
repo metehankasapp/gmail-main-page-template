@@ -289,18 +289,23 @@ nav {
 
 /*SECTION FİVE*/
 
+
+.sfv-ctr-inner-first{
+  margin-bottom: 0px;
+}
 .sfv-ctr {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .sfv-header {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .nmh-box {
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 5px;
   background-color: #fff;
+  width: auto;
 }
 
 .sfv-button {
@@ -308,12 +313,12 @@ nav {
 }
 
 .nmh-title {
-  font-size: 23px;
+  font-size: 20px;
   line-height: 28px;
 }
 
 .nmh-text {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 300;
   color: #5f6368;
 }
@@ -326,6 +331,8 @@ nav {
 
 .accordion-item-title h3 {
   font-weight: 300;
+  font-size: 19px;
+  line-height: 26px;
 
 }
 
@@ -333,6 +340,8 @@ nav {
   position: absolute;
   top: 0;
   right: 15px;
+  color: var(--gmail-blue);
+  font-size: 22px;
 }
 
 .accordion-item-ggl {
@@ -345,13 +354,12 @@ nav {
 
 .accordion-item-inner {
   display: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #5f6368;
   line-height: 24px;
   padding-top: 25px;
-  padding-bottom: 40px;
-  padding-right: 100px;
+  padding-bottom: 20px;
 
 }
 
@@ -360,7 +368,14 @@ nav {
 }
 
 
+
 @media (min-width: 576px) {
+
+  
+  .nmh-box{
+    width: 100%;
+  }
+  
   .sfv-ctr {
     padding: 6rem 1rem;
     width: 500px;
@@ -385,6 +400,32 @@ nav {
 }
 
 @media (min-width: 768px) {
+
+  .nmh-title {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  
+  .nmh-text {
+    font-size: 19px;
+    font-weight: 300;
+    color: #5f6368;
+  }
+
+  
+
+  .accordion-item-inner {
+    display: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: #5f6368;
+    line-height: 24px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+  
+  }
+
   .sfv-ctr {
     padding: 6rem 1rem;
     width: 700px;
@@ -444,6 +485,27 @@ nav {
 }
 
 @media (min-width: 992px) {
+
+  .sfv-ctr-inner-first{
+    margin-bottom: 100px;
+  }
+
+  .sfv-header {
+    margin-bottom: 60px;
+  }
+
+  .nmh-box {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    background-color: #fff;
+    width: auto;
+  }
+
+
+  .sfv-ctr-inner-first{
+    margin-bottom: 0;
+  }
+
   .google-faq {
     padding-left: 60px;
   }

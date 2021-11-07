@@ -6,7 +6,7 @@ function progreset(id) {
     $(".ss .progresInner").css("height", "0%");
     $(".ss .liHeader").css("color", "#5f6368");
     $(`.ss .liImages ul li`).removeClass();
-    $(`.ss .liImages ul li`).hide("100");
+    $(`.ss .liImages ul li`).css('display','none');
 
     if (x.matches) {
         $(`.ss .ss3-ul:nth-child(1) img`).each(function (index) {
@@ -19,7 +19,7 @@ function progreset(id) {
     } else {}
 
     /*LOOP FOR PROGRESS BAR */
-    $(`.ss .liImages ul li:nth-child(${id})`).show("100");
+    $(`.ss .liImages ul li:nth-child(${id})`).fadeIn(300);
     $(`.ss #liHeader${id}`).css("color", "var(--gmail-blue)");
     const progressWho = `progresInner${id}`;
     document.getElementById(progressWho).style.height = `0%`;
@@ -36,7 +36,7 @@ function progreset2(id) {
     $(".ss-t .progresInner").css("height", "0%");
     $(".ss-t .liHeader").css("color", "#5f6368");
     $(`.ss-t .liImages ul li`).removeClass();
-    $(`.ss-t .liImages ul li`).hide("100");
+    $(`.ss-t .liImages ul li`).css('display','none');
 
     if (x.matches) {
         console.log($(`.ss3-t-ul img`));
@@ -50,7 +50,7 @@ function progreset2(id) {
     } else {}
 
     /*LOOP FOR PROGRESS BAR */
-    $(`.ss-t .liImages ul li:nth-child(${id})`).show("100");
+    $(`.ss-t .liImages ul li:nth-child(${id})`).fadeIn(300);
     $(`.ss-t #liHeader${id}-t`).css("color", "var(--gmail-blue)");
     const progressWho = `progresInner${id}-t`;
     document.getElementById(progressWho).style.height = `0%`;
@@ -66,16 +66,7 @@ $(".accordion-item-ggl").click(function () {
     const accrInner = $($(this)[0]).find($(".accordion-item-inner"));
 
     /*RESET*/
-    $(".accordion-item-inner").each((element) => {
-        $($(".accordion-item-inner")[element]).css("display", "none");
-    });
-
-
-    $(".accordion-item-ggl i").each((element) => {
-        $($(".accordion-item-ggl i")[element]).removeClass('fa-angle-down');
-        $($(".accordion-item-ggl i")[element]).addClass('fa-angle-up');
-
-    });
+    
 
 
     if (arrow.hasClass('fa-angle-down')) {
