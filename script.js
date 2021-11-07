@@ -1,12 +1,20 @@
 var x = window.matchMedia("(max-width: 992px)");
 
 function progreset(id) {
+    /*MOBİLE IMAGE */
+    $('.ss .mobil-image').each(function (element) {
+        $($('.ss .mobil-image')[element]).css('display', 'none');
+    })
+
+    $($(`.ss #liHeader${id}`).find($('.mobil-image'))).fadeIn(300);
+
+
     /* RESET OTHER CSS*/
-    $(".ss #progress1").css("background-color", "rgba(0, 0, 0, 0.16)");
+    $(".ss #progress1").css("background-color", "#f1f3f4");
     $(".ss .progresInner").css("height", "0%");
     $(".ss .liHeader").css("color", "#5f6368");
     $(`.ss .liImages ul li`).removeClass();
-    $(`.ss .liImages ul li`).css('display','none');
+    $(`.ss .liImages ul li`).css('display', 'none');
 
     if (x.matches) {
         $(`.ss .ss3-ul:nth-child(1) img`).each(function (index) {
@@ -31,12 +39,21 @@ function progreset(id) {
 }
 
 function progreset2(id) {
+
+
+    /*MOBİLE IMAGE */
+    $('.ss-t .mobil-image').each(function (element) {
+        $($('.ss-t .mobil-image')[element]).css('display', 'none');
+    })
+
+    $($(`.ss-t #liHeader${id}-t`).find($('.mobil-image'))).fadeIn(300);
+
     /* RESET OTHER CSS*/
-    $(".ss-t #progress1-t").css("background-color", "rgba(0, 0, 0, 0.16)");
+    $(".ss-t #progress1-t").css("background-color", "#f1f3f4");
     $(".ss-t .progresInner").css("height", "0%");
     $(".ss-t .liHeader").css("color", "#5f6368");
     $(`.ss-t .liImages ul li`).removeClass();
-    $(`.ss-t .liImages ul li`).css('display','none');
+    $(`.ss-t .liImages ul li`).css('display', 'none');
 
     if (x.matches) {
         console.log($(`.ss3-t-ul img`));
@@ -66,7 +83,7 @@ $(".accordion-item-ggl").click(function () {
     const accrInner = $($(this)[0]).find($(".accordion-item-inner"));
 
     /*RESET*/
-    
+
 
 
     if (arrow.hasClass('fa-angle-down')) {
