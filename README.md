@@ -4,7 +4,6 @@ Hello, This week I coded a clone of the Gmail About page.
 
 Technologies I use:
 
-
 1-HTML</br>
 2-Css</br>
 3-Javascript</br>
